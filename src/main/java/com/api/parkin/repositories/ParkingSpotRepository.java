@@ -1,10 +1,11 @@
-package com.api.parkingcontrol.repositories;
+package com.api.parkin.repositories;
 
+import com.api.parkin.models.ParkingSpotModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 
 @Repository
-public abstract class ParkingSpotRepository<ParkingSpotModel> implements JpaRepository<ParkingSpotModel, UUID>{
+public interface ParkingSpotRepository extends JpaRepository<ParkingSpotModel, UUID> {
 }
